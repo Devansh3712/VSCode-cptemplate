@@ -5,7 +5,11 @@
 <p align = "center">
     <a href = "https://www.python.org"><img src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white"/></a>
     <a href = "./LICENSE"><img src = "https://img.shields.io/github/license/Devansh3712/PySQL?style=for-the-badge"></a>
-    <a href = ""><img src = "https://img.shields.io/visual-studio-marketplace/v/eventyret.bootstrap-4-cdn-snippet?style=for-the-badge&logo=visual-studio-code"></a>
+    <a href = ""><img src = "https://img.shields.io/visual-studio-marketplace/v/DevanshSingh.cptemplate?style=for-the-badge&logo=visual-studio-code"></a>
+</p>
+
+<p align = "center">
+    <img src = "https://user-images.githubusercontent.com/58616444/119818361-ba3ced80-bf0c-11eb-9913-e39ae23a25d2.gif" type = "video/mp4">
 </p>
 
 ## Commands
