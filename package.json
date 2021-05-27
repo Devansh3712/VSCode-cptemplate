@@ -1,0 +1,30 @@
+{
+    "name": "cptemplate",
+    "displayName": "cptemplate",
+    "description": "Python snippets and template for competitve programming",
+    "version": "1.0.0",
+    "publisher": "Devansh",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Devansh3712/VSCode-cptemplate"
+    },
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "python",
+                "path": "./snippets/template.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/math.json"
+            }
+        ]
+    }
+}

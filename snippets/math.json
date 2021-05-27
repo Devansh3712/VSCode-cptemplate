@@ -1,0 +1,21 @@
+{
+    "GCD Snippet": {
+        "prefix": "!pygcd",
+        "body": [
+            "def gcd(num1: int, num2: int)",
+            "    \"\"\"",
+            "    Greatest Common Divisor of two numbers",
+            "    using Euler's theorem",
+            "    \"\"\"",
+            "    if num1 == 0:",
+            "        return num2",
+            "    if num2 == 0:",
+            "        return num1",
+            "    if num1 > num2:",
+            "        return gcd(num1 % num2, num2)",
+            "    else:",
+            "        return gcd(num1, num2 % num1)"
+        ],
+        "description": "GCD using recursion"
+    }
+}
