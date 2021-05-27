@@ -1,6 +1,6 @@
 {
     "Python CP Template": {
-        "prefix": "!pytemp",
+        "prefix": "!pytmp",
         "body": [
             "import os",
             "import sys",

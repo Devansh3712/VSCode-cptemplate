@@ -1,0 +1,102 @@
+{
+    "Binary Search" : {
+        "prefix": "!pybin",
+        "body": [
+            "def binary_search(arr: list, start: int, end: int, key):",
+            "    \"\"\"",
+            "    Binary Search using iterative method",
+            "    \"\"\"",
+            "    while start <= end:",
+            "        mid = int(start + ((end - start) / 2))",
+            "        if arr[mid] < key:",
+            "            start = mid + 1",
+            "        elif arr[mid] > key:",
+            "            end = mid - 1",
+            "        else:",
+            "            return mid",
+            "",
+            "    return -1"
+        ],
+        "description": "Binary Search implementation"
+    },
+    "Depth First Search" : {
+        "prefix": "!pydfs",
+        "body": [
+            "def dfs(graph, start, visited = None):",
+            "    \"\"\"",
+            "    Here 'graph' represents the adjacency list",
+            "    of the graph, and 'start' represents the",
+            "    node from which to start",
+            "    \"\"\"",
+            "    if visited is None:",
+            "        visited = set()",
+            "    visited.add(start)",
+            "    for next in (graph[start] - visited):",
+            "        dfs(graph, next, visited)",
+            "    return visited"
+        ],
+        "description": "Depth First Search implementation"
+    },
+    "DFS Paths": {
+        "prefix": "!pydsp",
+        "body": [
+            "def dfs_paths(graph, start, goal):",
+            "    \"\"\"",
+            "    Returns all possible paths between a",
+            "    start vertex and a goal vertex",
+            "    \"\"\"",
+            "    stack = [(start, [start])]",
+            "    while stack:",
+            "        (vertex, path) = stack.pop()",
+            "        for next in (graph[vertex] - set(path)):",
+            "            if next == goal:",
+            "                yield path + [next]",
+            "            else:",
+            "                stack.append((next, path + [next]))",
+            "",
+            "    return stack"
+        ],
+        "description": "Depth First Search all possible paths"
+    },
+    "Breadth First Search" : {
+        "prefix": "!pybfs",
+        "body": [
+            "def bfs(graph, start):",
+            "    \"\"\"",
+            "    Here 'graph' represents the adjacency list",
+            "    of the graph, and 'start' represents the",
+            "    node from which to start",
+            "    \"\"\"",
+            "    visited, queue = set(), [start]",
+            "    while (queue):",
+            "        vertex = queue.pop(0)",
+            "        if (vertex not in visited):",
+            "            visited.add(vertex)",
+            "            queue.extend(graph[vertex] - visited)",
+            "",
+            "    return visited"
+        ],
+        "description": "Breadth First Search implementation"
+    },
+    "BFS Paths": {
+        "prefix": "!pybsp",
+        "body": [
+            "def bfs_paths(graph, start, goal):",
+            "    \"\"\"",
+            "    Returns all possible paths between a",
+            "    start vertex and a goal vertex, where",
+            "    the first path is the shortest path",
+            "    \"\"\"",
+            "    queue = [(start, [start])]",
+            "    while queue:",
+            "        (vertex, path) = queue.pop(0)",
+            "        for next in (graph[vertex] - set(path)):",
+            "            if (next == goal):",
+            "                yield path + [next]",
+            "            else:",
+            "                queue.append((next, path + [next]))",
+            "    return queue"
+        ],
+        "description": "Breadth First Search all possible paths"
+    }
+}

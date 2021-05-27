@@ -2,7 +2,7 @@
     "GCD Snippet": {
         "prefix": "!pygcd",
         "body": [
-            "def gcd(num1: int, num2: int)",
+            "def gcd(num1: int, num2: int):",
             "    \"\"\"",
             "    Greatest Common Divisor of two numbers",
             "    using Euler's theorem",
@@ -17,5 +17,73 @@
             "        return gcd(num1, num2 % num1)"
         ],
         "description": "GCD using recursion"
+    },
+    "Big Power Snippet": {
+        "prefix": "!pypow",
+        "body": [
+            "def big_power(num1: int, num2: int):",
+            "    \"\"\"",
+            "    Calculate (num1 ^ num2) where num1 and num2",
+            "    where num1 & num2 are big numbers",
+            "    \"\"\"",
+            "    result = 1",
+            "    while (num2 > 0):",
+            "        if num2 & 1:",
+            "            result = result * num1",
+            "        num1 = num1 ** 2",
+            "        num2 >>= 1",
+            "    return result"
+        ],
+        "description": "Power of big numbers"
+    },
+    "Sieve of Eratosthenes Snippet": {
+        "prefix": "!pysoe",
+        "body": [
+            "def sieve(number: int):",
+            "    num1 = (number - 1) // 2",
+            "    arr = [True] * num1",
+            "    num2 = 0",
+            "    num3 = 3",
+            "    primes = [2]",
+            "",
+            "    while (num3 * num3 < number):",
+            "        if arr[num2]:",
+            "            primes.append(num3)",
+            "            num4 = 2 * num2 * num2 + 6 * num2 + 3",
+            "            while (num4 < num1):",
+            "                arr[num4] = False",
+            "                num4 = num4 + 2 * num2 + 3",
+            "        num2 += 1",
+            "        num3 += 1",
+            "",
+            "    while (num2 < num1):",
+            "        if arr[num2]:",
+            "            primes.append(num3)",
+            "        num2 += 1",
+            "        num3 += 2",
+            "",
+            "    return primes"
+        ],
+        "description": "Sieve of Eratosthenes for counting primes"
+    },
+    "Fibonacci Numbers Snippet": {
+        "prefix": "!pyfib",
+        "body": [
+            "fib = [0, 1]",
+            "def fibonacci(number: int):",
+            "    \"\"\"",
+            "    Function for calculating the nth",
+            "    Fibonacci number",
+            "    \"\"\"",
+            "    if number <= 0:",
+            "        return 0",
+            "    elif number <= len(fib):",
+            "        return fib[number - 1]",
+            "    else:",
+            "        result = fibonacci(n - 1) + fibonacci(n - 2)",
+            "        fib.append(result)",
+            "        return result"
+        ],
+        "description": "Fibonacci numbers using recursion"
     }
 }
