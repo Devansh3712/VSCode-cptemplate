@@ -3,7 +3,7 @@
     "displayName": "cptemplate",
     "description": "Python snippets and template for competitve programming",
     "version": "1.0.0",
-    "publisher": "Devansh Singh",
+    "publisher": "DevanshSingh",
     "repository": {
         "type": "git",
         "url": "https://github.com/Devansh3712/VSCode-cptemplate"
